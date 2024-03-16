@@ -4,6 +4,7 @@ const handler = async (m, { conn, usedPrefix: _p }) => {
     let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
 const user = global.db.data.users[m.sender];
+let username = conn.getName(who)
 const taguser = '@' +  m.sender.split('@s.whatsapp.net')[0];
     const text = `
 *⚘اهلا و سهلا بك يا 『${taguser}』*
@@ -26,7 +27,7 @@ const taguser = '@' +  m.sender.split('@s.whatsapp.net')[0];
       }
     }, { quoted: m });
   } catch (e) {
-    conn.reply(m.chat, '❎ هناك خطأ', m);
+    conn.reply(m.chat, '❎ هناك خطأ في لائحة الاوامر', m);
     throw e;
   }
 };
