@@ -18,9 +18,9 @@ global.prems = ['21696363626'];
 
 global.packname = 'ᥡᥙᥒᥲ☕︎︎';
 global.author = 'ᥡᥙᥒᥲ☕︎︎';
-global.wm = 'ᥡᥙᥒᥲ☕︎︎;
-global.titulowm = 'ᥡᥙᥒᥲ☕︎︎;
-global.titulowm2 = `ᥡᥙᥒᥲ☕︎︎`
+global.wm = 'ᥡᥙᥒᥲ☕︎︎';
+global.titulowm = 'ᥡᥙᥒᥲ☕︎︎';
+global.titulowm2 = 'ᥡᥙᥒᥲ☕︎︎';
 global.igfg = 'ᥡᥙᥒᥲ☕︎︎';
 global.wait = '*[ ⏳ ] انتظر قليلا...*';
 
